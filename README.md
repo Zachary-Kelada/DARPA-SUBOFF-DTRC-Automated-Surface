@@ -14,3 +14,5 @@ in Grasshopper
 1. you will assign the points to the node named point
 2. grasshopper will generate the surface inside Grasshopper
 3. Press Bake at the Surface Node to Create Actual Surface in Rhino
+
+Detailed Process is Available at the DOCUMENTATION file
