@@ -1,0 +1,13 @@
+The Geometry is created in Blocks 
+1. Bare Hull
+2. Sail
+3. Tail
+4. RingWing
+
+This Is general Steps Guide
+1.run the MATLAB Code which will generate the Surface Points at the accuracy you specify (Default is 60 point per Part Length)
+2.go to matlab working directory where you will find (x,y,z) points created as CSV File 
+3.Import the file to Rhino
+4.Use Grasshoper code to create a surface from points in Rhino
+
+For Creating the BareHull
