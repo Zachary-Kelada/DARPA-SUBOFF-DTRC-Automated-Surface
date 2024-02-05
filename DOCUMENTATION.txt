@@ -2,13 +2,13 @@ The Geometry is created in Blocks
 1. Bare Hull
 2. Sail
 3. Tail
-4. RingWing
+4. RingWing (including struts)
 
 This Is general Steps Guide
 1.run the MATLAB Code which will generate the Surface Points at the accuracy you specify (Default is 60 point per Part Length)
 2.go to matlab working directory where you will find (x,y,z) points created as CSV File 
 3.Import the file to Rhino
-4.Use Grasshoper code to create a surface from points in Rhino
+4.Use Grasshoper code to create a surface from points in Rhino (Beta not ready for all Blocks yet)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			Warning
@@ -19,7 +19,7 @@ the coordinates got decimal values Rhio automatically sets decimals to 4 decmial
 the MATLAB Code Calls Function exportXYZtoCSV make sure "exportXYZtoCSV.mlx" is in the MATLAB working directory
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-For Creating the BareHull
+I-For Creating the BareHull
 A.Matlab
 1.Run MATLAB/DARPA-SUBOFF-HULL.mlx
 2.Check your MATLAB working directory and change it to folder you want the CSV Files created
@@ -34,7 +34,7 @@ C.Grasshopper
 1.in Rhino type Command Grasshopper and open "Grasshopper/BareHull.gh"
 2.Right click Point Node and select "Set Multiple Points" at the left end of the workflow
 3.Right click "Hull" surface Node and select "Bake" at the right end of the workflow
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 For Creating the Sail
 A.Matlab
 1.Run MATLAB/SailSide.mlx
@@ -63,3 +63,13 @@ E.Grasshopper
 2.
 
 4.Right "click Sail Cap" surface Node and select "Bake"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For Creating the Tail
+A.Matlab
+1.Run MATLAB/Tail.mlx
+2.Check your MATLAB working directory and change it to folder you want the CSV Files created
+3.Choose Tail Location by changing h DropDown menu value
+4.(optional,Default is 60) change Xdivision variables using slider in Live Editor
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For Creating the Ring Wing
