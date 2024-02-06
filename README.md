@@ -7,10 +7,10 @@ in Matlab
 1.the Code will generate the Points and plot the surface inside matlab which can be used for CFD Hardcoded in MATLAB or other purposes
 2.Create CSV File with x,y,z (which will be used to create surface in Rhino or any 3D Modeling Software)
 
-in Rhino 
+in Rhino (Make sure to change Rhino Tolerances)
 you will only use the import file command for CSV files and a few commands, grasshopper will do mostly everything
 
-in Grasshopper 
+in Grasshopper (still under development)
 1. you will assign the points to the node named point
 2. grasshopper will generate the surface inside Grasshopper
 3. Press Bake at the Surface Node to Create Actual Surface in Rhino
