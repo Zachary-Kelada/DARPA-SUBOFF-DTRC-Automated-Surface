@@ -8,7 +8,7 @@ in Matlab
 2.Create CSV File with x,y,z (which will be used to create surface in Rhino or any 3D Modeling Software)
 
 in Rhino (Make sure to change Rhino Tolerances)
-you will only use the import file command for CSV files and a few commands, grasshopper will do mostly everything
+you will only use the import file command for CSV files and a few commands to turn points into curves and surfaces,
 
 in Grasshopper (still under development)
 1. you will assign the points to the node named point
